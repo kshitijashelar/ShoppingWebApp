@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" type="text/css" href="cart.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="cart.js" async></script>
+    </head>
+    <body>
+        <div class ="container">
+            <h1>Shopping Cart</h1>
+            <div class="cart">
+                <div class="products">
+                    <img src="appke.jpg">
+                    <div class="product-info">
+                        <h3 class="product-name">Apple</h3>
+                        <button id="appleBtn" class="product-add">Add</button>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="banana.png">
+                    <div class="product-info">
+                        <h3 class="product-name">Banana</h3>
+                        <button id ="bananaBtn" class="product-add">Add</button>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="milk.jpg">
+                    <div class="product-info">
+                        <h3 class="product-name">Milk</h3>
+                        <button id ="milkBtn" class="product-add">Add</button>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="tomato.jpg">
+                    <div class="product-info">
+                        <h3 class="product-name">Tomato</h3>
+                        <button id = "tomatoBtn" class="product-add">Add</button>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="eggplant.png">
+                    <div class="product-info">
+                        <h3 class="product-name">Aubergine</h3>
+                        <button id = "egplantBtn" class="product-add">Add</button>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="chicken.png">
+                    <div class="product-info">
+                        <h3 class="product-name">Chicken</h3>
+                        <button id = "chcknBtn" class="product-add">Add</button>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="beef.png">
+                    <div class="product-info">
+                        <h3 class="product-name">Beef</h3>
+                        <button id = "beefBtn" class="product-add">Add</button>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="eggs.png">
+                    <div class="product-info">
+                        <h3 class="product-name">Egg</h3>
+                        <button id = "eggBtn" class="product-add">Add</button>
+                    </div>
+                </div>
+            </div>
+                <input type="text" placeholder="Add more products..." id="other">
+            <br>
+            <button class="button" onclick="submit()">Submit</button>
+        </div>
+        <table id="sumTbl" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Star Rating</th>
+                    <th>CO2-impact</th>
+                    <th>Food unit</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="summary-tbody">
+            
+            </tbody>
+        </table>
+        <table id="totsumTbl" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Cost of Offsetting</th>
+                    <th>Number of Items</th>
+                    <th>Number of trees</th>
+                    <th>Overall CO2 impact</th>
+                    <th>Overall Food Unit</th>
+                    <th>Overall Star Rating</th>
+                    <th>Overall Score</th>
+                </tr>
+            </thead>
+            <tbody id="totalsum-tbody">
+            
+            </tbody>
+        </table>
+    </body>
+</html>
